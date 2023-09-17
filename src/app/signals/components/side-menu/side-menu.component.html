@@ -1,0 +1,11 @@
+<ul class="list-group">
+  <!-- Basta poner la variable con parentesis al final para renderizar las señales -->
+  <li *ngFor="let item of menuItems()"
+      class="list-group-item"
+      [routerLink]="item.route"
+      routerLinkActive="active"
+      >
+    {{ item.title }}
+
+  </li>
+</ul>
